@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact David Knittel</title>
+    <!--Linking CSS stylesheet-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="container_allexceptfooter">
+
+        <header>
+            <div id="headercontent">
+                 <h1>
+                    David Knittel
+                </h1>
+                <nav>
+                    <a href="index.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+    
+        <main>
+            <h1>Contact</h1>
+            <!--Form for entering contact info-->
+            <form id="contact">
+                <!--Name-->
+                <label>
+                    Name
+                    <br>
+                    <input type="text" name="name" placeholder="Jane Smith" required>
+                    <br>
+                </label>
+                <!--Email-->
+                <label>
+                    Email
+                    <br>
+                    <input type="text" name="email" placeholder="example@gmail.com" required>
+                    <br>
+                </label>
+                <!--Message-->
+                <label>
+                    Message
+                    <br>
+                    <textarea rows="6" name="message" form="contact" required></textarea>
+                    <br>
+                </label>
+                <!--Submit button-->
+                <input id="inputbutton" type="submit" value="Submit">
+            </form>
+        </main>
+        
+    </div>
+
+    <footer>
+        Copyright &copy;
+    </footer>
+    
+</body>
+</html>
