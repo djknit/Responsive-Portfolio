@@ -56,13 +56,20 @@ nav {
 nav a {
     display: inline-block;
     text-decoration: none;
-    padding: 0 18px;
+    text-align: center;
+    padding: 0;
+    width: 98.6px;
     margin: 31px 0;
     border-right: solid #cccccc .2px;
     font-size: 17px;
 }
 
+nav a:first-child {
+    width: 80.6px;
+}
 nav a:last-child {
+    width: 76.6px;
+    text-align: right;
     border: none;
     padding-right: 0;
 }
@@ -180,15 +187,20 @@ input, form textarea {
     line-height: 2;
 }
 
-#inputbutton {
+input:focus, form textarea:focus {
+    outline: 2px solid #4aaaa5;
+}
+
+/* --- --- Submit button */
+#submit_button {
     width: auto;
     height: 40px;
     width: 115px;
+    margin-top: 8px;
     color: #ffffff;
     background-color: #4aaaa5;
 }
 
-/* --- --- Button hover */
-#inputbutton:hover {
+#submit_button:hover {
     border: 3px #dddddd solid;
 }
