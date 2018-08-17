@@ -1,3 +1,7 @@
+/**************************************************/
+/* Styles from Homework #1 with a couple minor corrections made*/
+/**************************************************/
+
 /* Setting styles shared by all three pages */
 
 /* --- Fonts (except heading font-color) */
@@ -67,6 +71,7 @@ nav a {
 nav a:first-child {
     width: 80.6px;
 }
+
 nav a:last-child {
     width: 76.6px;
     text-align: right;
@@ -133,8 +138,6 @@ main p:last-child {
 
 /* --- Portfolio page */
 #port_main { 
-    margin-top: 16px;
-    margin-bottom: 40px;
     padding-bottom: 34px;
 }
 
@@ -203,4 +206,48 @@ input:focus, form textarea:focus {
 
 #submit_button:hover {
     border: 3px #dddddd solid;
+}
+/*******************************************************/
+
+/**************************************************/
+/* New Styles */
+/**************************************************/
+
+
+
+/* Styles to be applied when screen width < 980 px */
+@media screen and (max-width: 980px) {
+    #headercontent {
+        width: 748px;
+    }
+        
+    main, main h1 {
+        width: 688px;
+    }
+
+    #port_main {
+        width: 691px;
+    }
+
+    input, form textarea {
+        width: 668px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #headercontent {
+        width: 620px;
+    }
+        
+    main, main h1 {
+        width: 560px;
+    }
+
+    #port_main {
+        width: 563px;
+    }
+
+    input, form textarea {
+        width: 540px;
+    }
 }
