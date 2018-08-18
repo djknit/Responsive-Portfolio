@@ -249,8 +249,14 @@ input:focus, form textarea:focus {
         width: 540px;
     }
 
+    /* --- Setting width for portfolio page (includes adjustment to allow icons to align with the right edge of the line under the heading */
     #port_main {
-        width: 563px;
+        width: 566px;
+        padding-right: 27px;
+    }
+
+    #port_h1 {
+        margin-right: 3px;
     }
 
     /* --- Adjustments to allow portfolio icons to remain 2-per-line */
@@ -265,7 +271,7 @@ input:focus, form textarea:focus {
     }
 
     .port_link {
-        margin-right: 30px;
+        margin-right: 33px;
     }
 
     .port_link.last_in_row {
