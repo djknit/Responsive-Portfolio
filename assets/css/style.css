@@ -234,7 +234,9 @@ input:focus, form textarea:focus {
     }
 }
 
+/* Styles applied when screen width < 768 px */
 @media screen and (max-width: 768px) {
+
     #headercontent {
         width: 620px;
     }
@@ -243,11 +245,38 @@ input:focus, form textarea:focus {
         width: 560px;
     }
 
+    input, form textarea {
+        width: 540px;
+    }
+
     #port_main {
         width: 563px;
     }
 
-    input, form textarea {
-        width: 540px;
+    /* --- Adjustments to allow portfolio icons to remain 2-per-line */
+    .port_link, .port_link img {
+        height: 194.75px;
+        width: 259.35px;
+    }
+
+    .port_icon_label {
+        top: 120px;
+        padding: 16px 0;
+    }
+
+    .port_link {
+        margin-right: 30px;
+    }
+
+    .port_link.last_in_row {
+        margin-right: 3px;
+    }
+
+    .port_link:hover {
+        margin-right: 27px;
+    }
+
+    .port_link.last_in_row:hover {
+        margin-right: 0;
     }
 }
