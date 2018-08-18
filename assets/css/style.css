@@ -400,3 +400,34 @@ input:focus, form textarea:focus {
         padding-bottom: 19.1px;
     }
 }
+
+/* Fixed header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+main {
+    margin-top: 131.6px;
+}
+
+.container_allexceptfooter {
+    min-height: calc(100vh - 271.1px);
+}
+
+/* --- Reinstating static header for small screens */
+@media screen and (max-width: 640px) {
+    header {
+        position: static;
+    }
+
+    main{
+        margin-top: 40px;
+    }
+
+    .container_allexceptfooter {
+        min-height: calc(100vh - 139.5px);
+    }
+}
