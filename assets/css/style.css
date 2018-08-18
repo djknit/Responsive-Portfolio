@@ -196,7 +196,6 @@ input:focus, form textarea:focus {
 
 /* --- --- Submit button */
 #submit_button {
-    width: auto;
     height: 40px;
     width: 115px;
     margin-top: 8px;
@@ -291,6 +290,109 @@ input:focus, form textarea:focus {
 }
 
 /* Styles applied when screen width <= 640 px */
-/* @media screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
+    body {
+        width: 100vw;
+        min-width: 360px;
+    }
 
-} */
+    /* --- Header */
+    header {
+        padding: 0;
+        border-bottom: 2px solid #cccccc;
+        background-color: #ffffff;
+    }
+
+    header h1 {
+        display: block;
+        text-align: center;
+        padding: 29.6px 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    #headercontent, #headercontent h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* --- --- Nav bar */
+    nav {
+        float: none;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    nav a {
+        display: inline-block;
+        margin: 24px 0;
+    }
+    
+    nav a:first-child {
+        width: 98.6pxpx;
+    }
+    
+    nav a:last-child {
+        width: 98.6px;
+        text-align: center;
+        border: none;
+    }
+
+    /* Main section */
+    main, main h1 {
+        width: calc(100vw - 80px);
+        min-width: 280px;
+    }
+
+    #profilepic {
+        width: calc(100vw - 80px);
+        min-width: 280px;
+        height: calc(75vw - 60px);
+        min-height: 210px;
+        margin-bottom: 20px;
+    }
+
+
+    /* Contact Page */
+    input, form textarea {
+        width: calc(100vw - 100px);
+        min-width: 260px;
+    }
+
+    #submit_button {
+        height: 40px;
+        width: 115px;
+        min-width: 115px;
+    }
+    
+    /* Portfolio page */
+    #port_main {
+        width: calc(100vw - 74px);
+    }
+
+    .port_icon_label {
+        top: 65.9%;
+        font-size: calc(7.33vw - 5.86px);
+        padding-top: calc(6.81vw - 5.45px);
+        padding-bottom: calc(6.81vw - 5.45px);
+    }
+    
+    .port_link, .port_link img {
+        width: calc(100vw - 80px);
+        min-width: 280px;
+        height: calc(75.09vw - 60.07px);
+        min-height: 210.26px;
+    }
+}
+
+/* Styles applied when screen width <= 360 px */
+/* I added this to match the min-width and min-height properties for portfolio icons */
+@media screen and (max-width: 360px) {
+    .port_icon_label {
+        font-size: 20.5px;
+        padding-top: 19.1px;
+        padding-bottom: 19.1px;
+    }
+}
